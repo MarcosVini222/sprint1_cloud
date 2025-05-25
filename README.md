@@ -55,7 +55,7 @@ Visual Studio, Rider ou outro editor compatível com .NET
 
 
 
-#Dockerfile
+## Dockerfile
 
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 USER app
@@ -81,7 +81,7 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Sprint_1.dll"]
 
-#Azule CLI 
+## Azule CLI 
 
 #Criação do Grupo de Recursos
 az group create --name rg_sprint --location brazilsouth
