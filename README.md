@@ -90,7 +90,7 @@ az group create --name rg_sprint --location brazilsouth
 az vm create --name vm_sprint  --resource-group rg_sprint  --image Ubuntu2204   --size Standard_B2s  --authentication-type password   --admin-username  fiap   --admin-password MarcosFiap1!
 
 ### Abertura de Portas
-az vm open-port  --name vm_sprint --resource-group rg_sprint1--port 8080
+az vm open-port  --name vm_sprint --resource-group rg_sprint --port 8080
 
 
 
