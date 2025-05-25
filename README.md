@@ -83,6 +83,16 @@ ENTRYPOINT ["dotnet", "Sprint_1.dll"]
 
 ## Azule CLI 
 
-#Criação do Grupo de Recursos
+### Criação do Grupo de Recursos
 az group create --name rg_sprint --location brazilsouth
+
+### Criação da VM
+az vm create --name vm_sprint  --resource-group rg_sprint  --image Ubuntu2204   --size Standard_B2s  --authentication-type password   --admin-username  fiap   --admin-password MarcosFiap1!
+
+### Abertura de Portas
+az vm open-port  --name vm_sprint --resource-group rg_sprint1--port 8080
+
+
+
+
 
